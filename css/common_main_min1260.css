@@ -1,0 +1,210 @@
+﻿@charset "utf-8";
+
+
+
+@media (min-width:1260px) {
+
+    * {
+        margin: 0;
+        text-decoration: none;
+    }
+
+    ul,
+    li,
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+#wrap {
+        width: 100%;
+        height: auto;
+
+    }
+
+    #wrap > header {
+        width: 100%;
+        height: 71px;
+        display: flex;
+    }
+
+    /*로고*/
+
+    #wrap > header > #logo_wrap {
+        width: 14%;
+        height: 71px;
+    }
+
+        #wrap > header > #logo_wrap > #image_box {
+            width: 100%;
+            height: 71px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #wrap > header > #logo_wrap > #image_box > a > .logo_i {
+                width: 80px;
+                height: 40px;
+            }
+
+        #wrap > header > #logo_wrap > #ham {
+            display: none;
+        }
+
+    /*네비게이션*/
+
+        #wrap > header > #nav {
+            width: 86%;
+            height: 71px;
+            background-color: rgb(10, 10, 65);
+            position:initial;
+        }
+
+            #wrap > header > #nav > ul {
+            }
+
+
+                #wrap > header > #nav > ul > li {
+                    float:left;
+                    width:12.5%;
+                    height:71px;
+                    line-height:71px;
+                    text-align: center;
+                    border-right: 1px solid #f4f3f92a;
+                    border-bottom:none;
+                }
+
+                    #wrap > header > #nav > ul > li:first-of-type {
+                        width: 12.5%;
+                        height: 71px;
+                        line-height: 71px;
+                    }
+
+                    #wrap > header > #nav > ul > li:last-of-type {
+                        border-bottom: none;
+                        height: 71px;
+                        line-height: 71px;
+                        background-color: orangered;
+                    }
+
+                        #wrap > header > #nav > ul > li:last-of-type:hover {
+                            background-color: rgb(10, 10, 65);
+                            transition: all 0.5s;
+                        }
+
+                        #wrap > header > #nav > ul > li:last-of-type a {
+                            padding:initial;
+                            background-color:transparent;
+                        }
+
+                            #wrap > header > #nav > ul > li:last-of-type a:hover {
+                                color: #fff;
+                            }
+
+
+                    #wrap > header > #nav > ul > li > a {
+                        border-bottom: none;
+                        line-height: 44px;
+                        font-weight: 900;
+                        color: #fff;
+                    }
+
+                    #wrap > header > #nav > ul > li:not(:last-of-type) a:hover {
+                        color: orangered;
+                    }
+
+                    
+
+
+
+/*하단*/
+    /*첫번째 푸터*/
+    #footer_ {
+        width: 100%;
+        height: 76px;
+        background-color: orangered;
+    }
+
+
+    #footer_>ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 0.9em;
+        font-weight: bolder;
+    }
+
+    #footer_>ul>li {
+        line-height: 76px;
+
+    }
+
+    #footer_>ul>li>a {
+        color: #fff;
+    }
+
+    #footer1>ul>li>a:hover {
+        color: rgb(10, 10, 65);
+        transition: all 0.3s;
+    }
+
+    /*마지막 푸터*/
+
+    footer {
+        width: 100%;
+        height: 510px;
+        background-color: rgb(10, 10, 65);
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: center;
+    }
+
+    footer>ul {
+        width: 18%;
+        padding: 3% 1%;
+
+    }
+
+
+
+    footer>ul>.a_li {
+        color: #fff;
+        font-weight: 900;
+        font-size: 1.1em;
+    }
+
+    footer>ul>li {
+        margin: 25px;
+        font-size: 0.8em;
+        color: #fff;
+    }
+
+    footer>ul>li>a {
+        color: #fff;
+        opacity: 0.8;
+    }
+
+    footer>ul>li>a:hover {
+        opacity: 1;
+    }
+
+
+
+    footer>p {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-top: 1px solid #eee;
+        color: #fff;
+        font-size: 0.8em;
+    }
+
+
+
+}

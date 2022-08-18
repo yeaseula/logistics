@@ -1,0 +1,194 @@
+﻿@charset "utf-8";
+
+
+@media (min-width:1260px) {
+
+
+
+            #wrap {
+                width: 100%;
+                height: auto;
+
+            }
+
+            header {
+                width: 100%;
+                height: 70px;
+                display: flex;
+
+            }
+
+            /*로고*/
+
+            .logo {
+                width: 14%;
+                height: 70px;
+
+
+            }
+
+            .logo>.image {
+                width: 100%;
+                height: 70px;
+                background-color: black;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo>.image>a>.logo_i {
+                width: 80px;
+                height: 40px;
+            }
+
+            .logo>.ham {
+                display: none;
+            }
+
+            /*네비게이션*/
+
+            .nav {
+                width: 86%;
+                height: 70px;
+                font-size: 1.1em;
+                background-color: rgb(10, 10, 65);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 1;
+
+            }
+
+            .nav>ul {
+                width: 100%;
+                height: 70px;
+                display: flex;
+
+            }
+
+            .nav>ul>li {
+                width: 15%;
+                height: 100%;
+                text-align: center;
+                border-right: 1px solid #f4f3f92a;
+            }
+
+            .nav>ul>li:last-child {
+                background-color: orangered;
+            }
+
+            .nav>ul>li:last-child:hover {
+                background-color: rgb(10, 10, 65);
+                transition: all 0.5s;
+            }
+
+            .nav>ul>li>a {
+                border-bottom: none;
+                line-height: 44px;
+                font-weight: 900;
+                color: #fff;
+            }
+
+            .nav>ul>li:nth-of-type(2) a {color: orangered;}
+
+            /*마지막 요소만 hover시 컬러 다르게*/
+
+            .nav>ul>li:not(:last-of-type) a:hover {color: orangered;}
+
+            .nav>ul>li:last-of-type a:hover {color: #fff;}
+
+
+            /*하단*/
+            /*첫번째 푸터*/
+            #footer_ {
+                width: 100%;
+                height: 75px;
+                background-color: orangered;
+            }
+
+
+            #footer_>ul {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 0.9em;
+                font-weight: bolder;
+            }
+
+            #footer_>ul>li {
+                line-height: 76px;
+
+            }
+
+            #footer_>ul>li>a {
+                color: #fff;
+            }
+
+            #footer1>ul>li>a:hover {
+                color: rgb(10, 10, 65);
+                transition: all 0.3s;
+            }
+
+            /*마지막 푸터*/
+
+            footer {
+                width: 100%;
+                height: 510px;
+                background-color: rgb(10, 10, 65);
+                display: flex;
+                flex-flow: row wrap;
+                align-content: space-between;
+                justify-content: center;
+            }
+
+            footer>ul {
+                width: 18%;
+                padding: 3% 1%;
+
+            }
+
+
+
+            footer>ul>.a_li {
+                color: #fff;
+                font-weight: 900;
+                font-size: 1.1em;
+            }
+
+            footer>ul>li {
+                margin: 25px;
+                font-size: 0.8em;
+                color: #fff;
+            }
+
+            footer>ul>li>a {
+                color: #fff;
+                opacity: 0.8;
+            }
+
+            footer>ul>li>a:hover {
+                opacity: 1;
+            }
+
+
+
+            footer>p {
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                border-top: 1px solid #eee;
+                color: #fff;
+                font-size: 0.8em;
+            }
+
+
+
+
+
+
+
+
+
+}
